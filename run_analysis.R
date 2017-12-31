@@ -66,4 +66,4 @@ avg_all <- bind_all_tbl %>%
   summarise_all(mean)
 
 #Step 6: extract the dataset to a file
-write.csv(avg_all,"./final_avg_dataset.csv",row.names=F)
+write.table(avg_all,"./final_avg_dataset.txt",row.names=F)
