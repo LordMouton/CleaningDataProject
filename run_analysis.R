@@ -54,7 +54,7 @@ activity <- function(x) {
 bind_all_tbl <- mutate(bind_all_tbl,ActivityLabel = activity(Activity))
 
 # Step 4 : Extract only the measurements on the mean and standard deviation for each measurement. 
-## Select only the variables that are requested : those which contains "mean" or "std"
+## Select only the variables thatavg_all are requested : those which contains "mean" or "std"
 ## and columns ActivityLabel and Subject
 bind_all_tbl <- select(bind_all_tbl,Subject,ActivityLabel,contains("mean"),contains("std"))
 
